@@ -8,7 +8,8 @@ import time
 import re
 
 # ─── CONFIG ───────────────────────────────────────────────
-DISCORD_TOKEN = "TON_TOKEN_ICI"
+import os
+DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
 # ──────────────────────────────────────────────────────────
 
 intents = discord.Intents.default()
